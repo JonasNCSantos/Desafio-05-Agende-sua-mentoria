@@ -20,18 +20,22 @@
         <div class="fieldset-wrapper">
           <legend>Informações pessoais</legend>
           <div class="colum-2">
-            <div class="input-wrapper">
+            <div class="input-wrapper fist-name-wrapper">
               <label for="fist-name">Nome</label>
               <input type="text" id="fist-name">
             </div>
-            <div class="input-wrapper">
+            <div class="input-wrapper last-name-wrapper">
               <label for="last-name">Sobrenome</label>
               <input type="text" id="last-name">
             </div>
           </div>
           <div class="input-wrapper">
-            <label for="mentorship-email">Email</label>
+            <label for="mentorship-email">Email <span>(digite um email válido)</span></label>
             <input type="email" id="mentorship-email">
+          </div>
+          <div class="input-wrapper">
+            <label for="mentorship-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="mentorship-email" minlength="6">
           </div>
         </div>
       </fieldset>

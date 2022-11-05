@@ -58,7 +58,9 @@ fieldset{
 }
 
 .fieldset-wrapper{
-  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .fieldset-wrapper legend{
@@ -69,18 +71,26 @@ fieldset{
   color: #535971;
   padding-bottom: 16px;
   border-bottom: 1px solid #E6E6F0;
+  /*margin-bottom: 36px;*/
 }
 
 .colum-2{
   display: flex;
   gap: 22px;
-  width: 100%;
 }
 
+.fist-name-wrapper, 
+.last-name-wrapper{
+  width: 50%;
+}
+
+/*
 .input-wrapper{
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
+*/
 
 .input-wrapper input{
   width: 100%;
@@ -89,4 +99,19 @@ fieldset{
   border: 1px solid #E6E6F0;
   border-radius: 8px;
   padding: 0 24px;
+}
+
+.input-wrapper label{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span{
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
 }
